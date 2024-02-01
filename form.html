@@ -18,9 +18,13 @@ Description : A simple HTML file for form tag.
     <form action="#" method="post">
         <fieldset>
             <legend>Personal Information</legend>
-            <!-- Add a label and input field for 'Name' here -->
+            <!-- Add a label and input field for 'Name' here -->\
+            <label for="Name">Name:</label><br>
+            <<input type="Name" id="Name" name="Name"><br>
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email"><br>
+            <label for="Password">Password:</label><br>
+            <input type="Password" id="Password" name="Password"><br>
             <!-- Add a label and input field for 'Password' here, ensure to use the correct type for password fields -->
         </fieldset>
 
@@ -29,36 +33,64 @@ Description : A simple HTML file for form tag.
             <p>Gender:</p>
 			<input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label><br>
+            <input type="radio" id="Female" name="gender" value="Female">
+            <label for="Female">Female</label><br>
+            <input type="radio" id="Other" name="gender" value="Other">
+            <label for="Other">Other</label><br>
             <!-- Create radio buttons for 'Female', and 'Other' gender options -->
 	
             <label for="fruits">Choose a fruit:</label><br>
             <select id="fruits" name="fruits">
-				<option value="apple">Apple</option>
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="orange">Orange</option>
+            <option value="grape">Grape</option>
+            <option value="cherry">Cherry</option>
+            <option value="strawberry">Strawberry</option>
+            <option value="raspberry">Raspberry</option>
+            <option value="blackberry">Blackberry</option>
+            <option value="blueberry">Blueberry</option>
+            <option value="mango">Mango</option>
                 <!-- Add options for various fruits like Banana, Orange, etc. (At least 10 fruits) -->
             </select><br>
 			<!-- Add some attributes to select tag that changes it from a drop menu to a scrollable list.-->
         </fieldset>
 
-        <fieldset>
-            <legend>Other Elements</legend>
-            <!-- Add a label and input field for 'Birthday' here, use the appropriate type for date selection -->
-            <label for="favcolor">Favorite Color:</label><br>
-            <input type="color" id="favcolor" name="favcolor"><br>
-            <!-- Add a label and number input field for 'Quantity', set min to 1 and max to 5 -->
-            <label for="range">Range (between 1 and 10):</label><br>
-            <input type="range" id="range" name="range" min="1" max="10"><br>
-			<!-- Add an attribute to the range input to set its initial value to 2-->
-            <!-- Add a label and input field for 'Homepage', use the correct type for URLs -->
-            <label for="feedback">Feedback:</label><br>
-			<textarea id="feedback" name="feedback"></textarea><br>
-            <!-- Add some attributes to the feedback textarea tag to make it bigger and suitable for editing texts-->
-            <!-- Add a file input field -->
-            <!-- Add a checkbox for 'Subscribe to newsletter' -->
-            <!-- Add a hidden field for 'customerId', set its value to '12345' -->
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-        </fieldset>
-    </form>
+        <form>
+            <fieldset>
+                <legend>Other Elements</legend>
+        
+                <label for="Birthday">Birthday:</label>
+                <input type="date" id="Birthday" name="Birthday"><br>
+        
+                <label for="favcolor">Favorite Color:</label><br>
+                <input type="color" id="favcolor" name="favcolor"><br>
+        
+                <label for="quantity">Quantity (between 1 and 5):</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+        
+                <label for="range">Range (between 1 and 10):</label><br>
+                <input type="range" id="range" name="range" min="1" max="10" value="2"><br>
+        
+                <label for="homepage">Homepage:</label><br>
+                <input type="url" id="homepage" name="homepage"><br>
+        
+                <label for="feedback">Feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
+        
+                <label for="file">Choose File:</label><br>
+                <input type="file" id="file" name="file"><br>
+        
+                <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+                <label for="subscribe">Subscribe to newsletter</label><br>
+        
+                <input type="hidden" id="customerId" name="customerId" value="12345">
+        
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+        
 
 </body>
 </html>
